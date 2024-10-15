@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cricket Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Bat Ball Stump Game</h1>
+    <div>
+        <button class="gameButton" onclick="
+
+            let randomNumber = Math.random() * 3;
+            let computerChoice;
+            if(randomNumber>0&&randomNumber<=1){
+            computerChoice = 'Bat'
+
+            }
+            else if (randomNumber<=2&&randomNumber>1){
+            computerChoice = 'Ball'
+
+            }
+            else if(randomNumber<=3&&randomNumber>2){
+            computerChoice = 'Stump'
+
+            }
+            let result;
+            if(computerChoice==='Ball'){
+            result= 'Congratulations, You Win🥳'
+
+            }else if(computerChoice==='Bat'){
+            result= '🤡, Its a draw'
+
+            }else{
+            result= '😔 You Loos, better luck next time'
+            }
+
+            alert(`Computer choose ${computerChoice}, You Chose Bat and ${result}`)
+
+
+            ">Bat</button>
+            
+            
+            
+            <button class="gameButton" onclick="
+            
+            let randomNumber1 = Math.random() * 3;
+            let computerChoice1;
+            if(randomNumber1>0&&randomNumber1<=1){
+            computerChoice1 = 'Bat'
+
+            }
+            else if (randomNumber1<=2&&randomNumber1>1){
+            computerChoice1 = 'Ball'
+
+            }
+            else if(randomNumber1<=3&&randomNumber1>2){
+            computerChoice1 = 'Stump'
+
+            }
+            let result1;
+            if(computerChoice1==='Ball'){
+            result1= '🤡, Its a draw'
+
+            }else if(computerChoice1==='Bat'){
+            result1= '😔 You Loos, better luck next time'
+
+            }else{
+            result1= 'Congratulations, You Win🥳'
+            }
+
+            alert(`Computer choose ${computerChoice1}, You Chose Ball and ${result1}`)  
+            ">Ball</button>
+             
+           
+            <button class="gameButton" onclick="
+            let randomNumber2 = Math.random() * 3;
+            let computerChoice2;
+            if(randomNumber2>0&&randomNumber2<=1){
+            computerChoice2 = 'Bat'
+
+            }
+            else if (randomNumber2<=2&&randomNumber2>1){
+            computerChoice2 = 'Ball'
+
+            }
+            else if(randomNumber2<=3&&randomNumber2>2){
+            computerChoice2 = 'Stump'
+
+            }
+            let result2;
+            if(computerChoice2==='Ball'){
+            result2= 'Congratulations, You Win🥳'
+
+            }else if(computerChoice2==='Bat'){
+            result2= '😔 You Loos, better luck next time'
+
+            }else{
+            result2= '🤡, Its a draw'
+            }
+
+            alert(`Computer choose ${computerChoice2}, You Chose Ball and ${result2}`)  
+           
+            ">Stump</button>
+            </div>
+    
+</body>
+
+</html>
